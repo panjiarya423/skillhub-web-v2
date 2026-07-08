@@ -1,6 +1,3 @@
-/* ==========================================================================
-   SkillHub Premium & Creative Global Stylesheet
-   ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 :root {
@@ -13,7 +10,7 @@
     --text-muted: #64748b;
 }
 
-/* Dark Mode Variable Overrides (Bootstrap 5.3 Framework) */
+/* Dark Mode */
 [data-bs-theme="dark"] {
     --light-bg: #090d16;
     --card-border: #1e293b;
@@ -28,13 +25,11 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Typography Accent */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     letter-spacing: -0.02em;
 }
 
-/* Navbar Glassmorphism */
 .navbar {
     background-color: rgba(15, 23, 42, 0.85) !important;
     backdrop-filter: blur(12px);
@@ -42,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* LOGO "SkillHub" */
+/* LOGO SkillHub */
 .premium-logo {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 1.6rem !important;
@@ -55,30 +50,26 @@ h1, h2, h3, h4, h5, h6 {
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Penyesuaian warna tulisan 'Skill' saat mode terang */
 [data-bs-theme="light"] .premium-logo {
     color: #ffffff !important; 
 }
 
-/* Efek warna gradasi pada tulisan 'Hub' */
 .premium-logo .hub-text {
     background: linear-gradient(135deg, #2563eb, #06b6d4); /* Gradasi Biru ke Cyan */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    color: transparent; /* Fallback */
+    color: transparent; 
     margin-left: 2px;
 }
 
-/* Efek titik aksen bergaya SaaS */
 .premium-logo .hub-dot {
-    color: #10b981; /* Hijau Emerald */
+    color: #10b981;
     font-size: 1.8rem;
     line-height: 0;
     margin-left: 2px;
 }
 
-/* Animasi melayang saat kursor diarahkan ke logo */
 .premium-logo:hover {
     transform: scale(1.05);
 }
@@ -98,7 +89,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
-/* Button Premium Customization */
 .btn-primary {
     background-color: var(--primary-color) !important;
     border-color: var(--primary-color) !important;
@@ -121,7 +111,6 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.2s ease;
 }
 
-/* Premium Card Micro-interactions */
 .card, .course-card .card {
     border: 1px solid var(--card-border) !important;
     border-radius: 18px !important;
@@ -140,7 +129,6 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
 }
 
-/* Premium Inputs */
 .form-control, .form-select {
     border-radius: 12px;
     padding: 0.75rem 1rem;
@@ -151,7 +139,6 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
 }
 
-/* SaaS Dashboard Style Table */
 .table {
     border-collapse: separate !important;
     border-spacing: 0 10px !important;
@@ -187,7 +174,6 @@ h1, h2, h3, h4, h5, h6 {
 .table tbody tr td:first-child { border-left: 1px solid var(--card-border) !important; border-top-left-radius: 14px; border-bottom-left-radius: 14px; }
 .table tbody tr td:last-child { border-right: 1px solid var(--card-border) !important; border-top-right-radius: 14px; border-bottom-right-radius: 14px; }
 
-/* Custom Badge Pill */
 .badge {
     padding: 0.6em 1em;
     border-radius: 8px;
@@ -197,7 +183,6 @@ h1, h2, h3, h4, h5, h6 {
 .bg-success { background-color: rgba(16, 185, 129, 0.15) !important; color: #059669 !important; }
 .bg-danger { background-color: rgba(239, 68, 68, 0.15) !important; color: #dc2626 !important; }
 
-/* Custom List Item checked icons */
 .list-group-item {
     padding: 1rem 0.5rem !important;
     border-bottom: 1px solid var(--card-border) !important;
