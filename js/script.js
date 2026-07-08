@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    /* FITUR 1: AUTOMATIC LIGHT/DARK THEME SWITCHER */
+    /* AUTOMATIC LIGHT/DARK THEME SWITCHER */
     const navbarNav = document.querySelector(".navbar .navbar-nav");
     if (navbarNav) {
         const themeLi = document.createElement("li");
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    /* FITUR 2: REAL-TIME COUNTDOWN TIMER (FOMO ENGINE) untuk index.html */
+    /* REAL-TIME COUNTDOWN TIMER di index.html */
     const countdownContainer = document.getElementById("countdownBox");
     if (countdownContainer) {
         let targetTime = new Date();
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 1000);
     }
 
-    /* FITUR 3: ANIMATED COUNTER UP (SOCIAL PROOF INJECTOR) untuk index.html */
+    /* ANIMASI COUNTER UP di index.html */
     const statNumbers = document.querySelectorAll(".stat-number");
     statNumbers.forEach(stat => {
         const targetValue = parseInt(stat.getAttribute("data-target"));
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
         runCounter();
     });
 
-    /* FITUR 4: LIVE SEARCH CARD FILTER untuk katalog.html */
+    /* LIVE SEARCH CARD FILTER di katalog.html */
     const searchInput = document.getElementById("searchInput");
     if (searchInput) {
         searchInput.addEventListener("keyup", function () {
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /* FITUR 5: AUTOMATIC PRICE CALCULATOR & LIVE VALIDATION untuk daftar.html */
+    /* AUTOMATIC PRICE CALCULATOR & LIVE VALIDATION di daftar.html */
     const programSelect = document.getElementById("programSelect");
     const priceDisplay = document.getElementById("priceDisplay");
     const registrationForm = document.getElementById("registrationForm");
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
     }
 
-    /* FITUR 6: DYNAMIC DETAIL PAGE untuk detail-program.html */
+    /* DYNAMIC DETAIL PAGE di detail-program.html */
     const programVideo = document.getElementById("programVideo");
     
     if (programVideo) {
@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const selectedCourse = courseData[programCode];
 
         if (selectedCourse) {
-            // teks dan link video
+            // teks & link video
             document.getElementById("programTitle").innerText = selectedCourse.title;
             document.getElementById("programVideo").src = selectedCourse.videoSrc;
             document.getElementById("programDesc").innerText = selectedCourse.desc;
